@@ -1,5 +1,5 @@
-"""Component 3 (random tokens) v1
-Generates random choice of tokens in random order"""
+"""Component 3 (question_generator) v1
+Generates random choice of tokens in random order and prints them"""
 
 import random
 
@@ -74,4 +74,4 @@ for item in range(1):
         print("rua tekau mā iwa")
     elif token == "toru tekau":
         print("toru tekau")
-   
+
