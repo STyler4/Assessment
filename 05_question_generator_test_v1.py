@@ -11,7 +11,7 @@ for i in tokens:
         token_2.append(i)
 
 
-NUMBER_OF_QUESTIONS = 30
+NUMBER_OF_QUESTIONS = 2
 questions = NUMBER_OF_QUESTIONS
 STARTING_SCORE = 0
 score = STARTING_SCORE
