@@ -1,6 +1,6 @@
 """Component 2 (question) v4
 Changing v3 into a function
-Also needed to change user_balance to the more generic variable name 'response'
+Also needed to change NUMBER_OF_QUESTIONS to the more generic variable name 'response'
 and to change the condition and position of the number comparison into the loop
 to make the function recyclable"""
 

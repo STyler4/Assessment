@@ -4,44 +4,27 @@ Generates random choice of tokens in random order and asks a question to the use
 import random
 
 tokens = ["tahi", "rua"]
-token_2 = []
-
-for i in tokens:
-    if i not in token_2:
-        token_2.append(i)
 
 
 NUMBER_OF_QUESTIONS = 2
 questions = NUMBER_OF_QUESTIONS
 STARTING_SCORE = 0
 score = STARTING_SCORE
-
+token = random.choice(tokens)
 
 # Testing loop
 
-while True:
-    for item in range(1):
-        token = random.choice(tokens)
-        if token == "tahi":
-            answer = input("What number is tahi? ")
-            if answer == "1":
-                questions -= 1
-                score += 1
-                print("Well done that is correct")
-            else:
-                questions -= 1
-                print("That was incorrect unlucky")
-        elif token == "rua":
-            answer = input("What number is rua? ")
-            if answer == "2":
-                questions -= 1
-                score += 1
-                print("Well done that is correct")
-            else:
-                questions -= 1
-                print("That was incorrect unlucky")
 
+def question_check():
+    for item in range(1):
+        random.choice(tokens)
+        while questions != 0:
+            return item
 
 # Main routine
-    print(f"You have a score of {score} at the moment"
-          f" and have {questions} questions left")
+
+answer = input(f"What number is {token}? ")
+if answer == token:
+    print("Well done that was correct")
+elif answer != token:
+    print("That was incorrect, unlucky")
