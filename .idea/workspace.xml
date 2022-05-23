@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2cdce1cf-92f2-4c3f-9fc3-794e8c71e400" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/05_question_generator_v6.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assessment_base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05_question_generator_v7.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assessment_base_v2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04_questions_v4.py" beforeDir="false" afterPath="$PROJECT_DIR$/04_questions_v4.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/05_question_generator_test_v1.py" beforeDir="false" afterPath="$PROJECT_DIR$/05_question_generator_test_v1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/05_question_generator_v5.py" beforeDir="false" afterPath="$PROJECT_DIR$/05_question_generator_v5.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assessment_base.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assessment_base.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,28 +50,7 @@
       <recent name="C:\Users\samue\OneDrive - Middleton Grange School\Computer Science\A51.7 Programming\Assessment" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.05_question_generator_test_v1">
-    <configuration name="03_instructions_v1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Assessment" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/03_instructions_v1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.Assessment_base_v2">
     <configuration name="05_question_generator_test_v1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Assessment" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -94,7 +72,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="05_question_generator_v4" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="05_question_generator_v1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Assessment" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -106,7 +84,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/05_question_generator_v4.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/05_question_generator_v1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -136,7 +114,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Assessment_base" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="05_question_generator_v7" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Assessment" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -148,7 +126,28 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\samue\OneDrive - Middleton Grange School\Computer Science\A51.7 Programming\Assessment\Assessment_base.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/05_question_generator_v7.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Assessment_base_v2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Assessment" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Assessment_base_v2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -159,11 +158,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.05_question_generator_test_v1" />
+        <item itemvalue="Python.Assessment_base_v2" />
+        <item itemvalue="Python.05_question_generator_v7" />
         <item itemvalue="Python.05_question_generator_v5" />
-        <item itemvalue="Python.Assessment_base" />
-        <item itemvalue="Python.03_instructions_v1" />
-        <item itemvalue="Python.05_question_generator_v4" />
+        <item itemvalue="Python.05_question_generator_v1" />
+        <item itemvalue="Python.05_question_generator_test_v1" />
       </list>
     </recent_temporary>
   </component>

@@ -26,9 +26,14 @@ def yes_no(question_text):
 
 # function to display instructions
 def instructions():
-    print("**** How to Play ****")
     print()
-    print("The rules of the game will go here")
+    print(formatter("*", "How to play"))
+    print()
+    print("Choose the amount of questions you want to answer - must be between 10 and 30")
+    print()
+    print("Then press <enter> to play>. You will get a random question about numbers"
+          "For example, what is the number tahi? "
+          "The answer would be '1' ")
     print()
 
 
@@ -37,7 +42,7 @@ def num_check(question, low, high):
     error = "That was not a valid input\n" \
             "Please enter a number between {} and {}\n".format(low, high)
 
-    # Keep asking until a valid amount (1-10) is entered
+    # Keep asking until a valid amount (10-30) is entered
     while True:
         try:
             # ask for amount
@@ -64,10 +69,10 @@ def questions_check():
               "rua tekau mā whā", "rua tekau mā rima", "rua tekau mā ono",
               "rua tekau mā whitu", "rua tekau mā waru", "rua tekau mā iwa", "toru tekau"]
 
-    questions = NUMBER_OF_QUESTIONS
-    starting_score = 0
-    score = starting_score
-    token = random.choice(tokens)
+questions = NUMBER_OF_QUESTIONS
+starting_score = 0
+score = starting_score
+token = random.choice(tokens)
 
 
 # Main routine go here...
@@ -80,3 +85,21 @@ if played_before == "No":
 # ask the user how much they want to play with
 NUMBER_OF_QUESTIONS = num_check("How many questions would you like to answer? ", 10, 30)
 print(f"You are going to answer {NUMBER_OF_QUESTIONS} questions")
+
+
+# function to format text output
+def formatter(symbol, text):
+    sides = symbol * 3
+    formatted_text = f"{sides} {text} {sides}"
+    top_bottom = symbol * len(formatted_text)
+    return f"{top_bottom}\n{formatted_text}\n{top_bottom}"
+
+
+# Main routine go here...
+print(formatter("-", "Welcome to the maori number quiz"))
+print()
+
+played_before = yes_no("Have you played this game before? ")
+
+if played_before == "No":
+    instructions()
