@@ -58,59 +58,48 @@ def num_check(question, low, high):
             print(error)
 
 
-# Function to generate random token
-def generate_token(balance):
+# questions
+def num_questions(balance):
+    import random
 
-    rounds_played = 10
-    play_again = ""
+    numbers = ["tahi", "rua", "toru", "whā", "rima", "ono",
+               "whitu", "waru", "iwa", "tekau", "tekau mā tahi", "tekau mā rua",
+               "tekau mā toru", "tekau mā whā", "tekau mā rima", "tekau mā ono",
+               "tekau mā whitu", "tekau mā waru", "tekau mā iwa", "rua tekau",
+               "rua tekau mā tahi", "rua tekau mā rua", "rua tekau mā toru",
+               "rua tekau mā whā", "rua tekau mā rima", "rua tekau mā ono",
+               "rua tekau mā whitu", "rua tekau mā waru", "rua tekau mā iwa", "toru tekau"]
 
-    # Test loop to generate 5 tokens
-    while play_again != "x":
-        rounds_played -= 1  # keep track of rounds
-        print(formatter(".", f"Question {rounds_played}"))
-        print()
-        number = random.randint(1, 100)
+    questions = ["1", "2", "3", "4", "5", "6",
+                 "7", "8", "9", "10", "11", "12",
+                 "13", "14", "15", "16",
+                 "17", "18", "19", "20",
+                 "21", "22", "23",
+                 "24", "25", "26",
+                 "27", "28", "29", "30"]
 
-        # adjust balance
-        # if the random number is between 1 and 5
-        # user gets a unicorn (add $4 to balance)
-        if 1 <= number <= 5:
-            balance += 4
-            print(formatter("!", "Congratulations, you got a unicorn"))
-            print()
+    while True:
+        question = random.choice(numbers)
+        attempt = input(f"What number is {question}: ")
 
-        # if the random number is between 6 and 36
-        # user gets a donkey (subtract $1 from balance)
-        elif 6 <= number <= 36:
-            balance -= 1
-            print(formatter("D", "Bad luck, you got a donkey"))
-            print()
-
-        # in all other cases the token must be a horse or a zebra
-        # (subtract $0.50 from the balance in either case)
+        answer_index = numbers.index(question)
+        answer = questions[answer_index]
+        score = 0
+        number_of_questions = balance
+        if attempt == answer:
+            print("Well done, that was correct")
+            numbers.pop(answer_index)
+            questions.pop(answer_index)
+            score += 1
+            number_of_questions -= 1
+        elif attempt == "":
+            print("Invalid please try again")
         else:
-            # if the number is even, set the token to zebra
-            if number % 2 == 0:
-                balance -= .50
-                print(formatter("Z", "You got a zebra"))
-                print()
-
-            # otherwise, set the token to horse
-            else:
-                balance -= .50
-                print(formatter("H", "You got a horse"))
-                print()
-
-        # output
-        print(f"Your score is now: {balance}/ {starting_balance}")
-        if balance < 1:
-            print("\nYou have answered all your questions well done!!!")
-            play_again = "x"
-        else:
-            play_again = input("\nDo you want to play again ?\n<enter> to play"
-                               "again or 'X' to exit ").lower()
-        print()
-    return balance
+            print("Unlucky, that was incorrect")
+            numbers.pop(answer_index)
+            questions.pop(answer_index)
+            number_of_questions -= 1
+            print(number_of_questions)
 
 
 # function to format text output
@@ -131,14 +120,10 @@ if played_before == "No":
     instructions()
 
 
-# ask the user how much they want to play with
+# ask the user how many questions they want to answer
 starting_balance = num_check("How many questions would you like to answer? (between 10 - 30) ", 10, 30)
-print(f"You are going to answer {starting_balance}")
+print(f"You are going to answer {starting_balance} questions")
 
 
-closing_balance = generate_token(starting_balance)
-print("Thanks for playing")
-print(f"You started with ${starting_balance}")
-print(f"and leave with ${closing_balance}")
-print()
-print(formatter("*", "Goodbye"))
+
+

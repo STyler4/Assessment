@@ -16,21 +16,26 @@ questions = ["1", "2", "3", "4", "5", "6",
              "24", "25", "26",
              "27", "28", "29", "30"]
 
+
 while True:
     question = random.choice(numbers)
     attempt = input(f"What number is {question}: ")
 
     answer_index = numbers.index(question)
     answer = questions[answer_index]
-
+    score = 0
+    number_of_questions = balance
     if attempt == answer:
         print("Well done, that was correct")
         numbers.pop(answer_index)
         questions.pop(answer_index)
+        score += 1
+        number_of_questions -= 1
     elif attempt == "":
         print("Invalid please try again")
     else:
         print("Unlucky, that was incorrect")
         numbers.pop(answer_index)
         questions.pop(answer_index)
-        print(numbers)
+        number_of_questions -= 1
+        print(number_of_questions)
