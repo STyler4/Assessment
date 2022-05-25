@@ -30,9 +30,11 @@ def instructions():
     print()
     print(formatter("*", "How to play"))
     print()
-    print("Choose the amount of questions you want to answer - must be between 10 and 30")
+    print("Choose the amount of questions you want to answer"
+          " - must be between 10 and 30")
     print()
-    print("Then press <enter> to play. You will get a random question about numbers"
+    print("Then press <enter> to play. "
+          "You will get a random question about numbers"
           " for example, what is the number tahi? "
           "The answer would be '1' ")
     print()
@@ -66,12 +68,14 @@ def quiz(num_questions):
     rounds = 0
 
     numbers = ["tahi", "rua", "toru", "whā", "rima", "ono",
-               "whitu", "waru", "iwa", "tekau", "tekau mā tahi", "tekau mā rua",
-               "tekau mā toru", "tekau mā whā", "tekau mā rima", "tekau mā ono",
-               "tekau mā whitu", "tekau mā waru", "tekau mā iwa", "rua tekau",
+               "whitu", "waru", "iwa", "tekau", "tekau mā tahi",
+               "tekau mā rua", "tekau mā toru", "tekau mā whā",
+               "tekau mā rima", "tekau mā ono", "tekau mā whitu",
+               "tekau mā waru", "tekau mā iwa", "rua tekau",
                "rua tekau mā tahi", "rua tekau mā rua", "rua tekau mā toru",
                "rua tekau mā whā", "rua tekau mā rima", "rua tekau mā ono",
-               "rua tekau mā whitu", "rua tekau mā waru", "rua tekau mā iwa", "toru tekau"]
+               "rua tekau mā whitu", "rua tekau mā waru", "rua tekau mā iwa",
+               "toru tekau"]
 
     answers = ["1", "2", "3", "4", "5", "6",
                "7", "8", "9", "10", "11", "12",
@@ -130,7 +134,8 @@ print()
 
 
 # ask the user how many questions they want to answer
-starting_balance = num_check("How many questions would you like to answer? (between 10 - 30) ", 10, 30)
+starting_balance = num_check("How many questions would you like to answer? "
+                             "(between 10 - 30) ", 10, 30)
 print()
 print(formatter("-", f"You are going to answer {starting_balance} questions"))
 print()
@@ -143,3 +148,5 @@ print(f"You got a score of {score} out of {starting_balance}")
 print(formatter("*", "WELL DONE"))
 print("----------------------------------------")
 print("Thanks for playing")
+print()
+print(formatter("#", "Goodbye"))
