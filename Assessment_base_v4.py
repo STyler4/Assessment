@@ -1,5 +1,6 @@
-"""LU base component
+"""Maori quiz base component
 Components added after they have been created and tested"""
+import random
 
 
 # yes/no checking function
@@ -59,8 +60,10 @@ def num_check(question, low, high):
 
 
 # questions
-def num_questions():
-    import random
+def quiz(num_questions):
+    score_ = 0
+    num_questions_ = num_questions
+    rounds = 0
 
     numbers = ["tahi", "rua", "toru", "whā", "rima", "ono",
                "whitu", "waru", "iwa", "tekau", "tekau mā tahi", "tekau mā rua",
@@ -78,26 +81,33 @@ def num_questions():
                "24", "25", "26",
                "27", "28", "29", "30"]
 
-    while True:
+    while rounds <= num_questions_:
+        rounds += 1
         question = random.choice(numbers)
         attempt = input(f"What number is {question}: ")
+        print()
 
         answer_index = numbers.index(question)
         answer = answers[answer_index]
 
         if attempt == answer:
-            print("Well done, that was correct")
+            print()
+            print(formatter("!", "Well done, that was correct"))
             numbers.pop(answer_index)
             answers.pop(answer_index)
-            return attempt
+            score_ += 1
+            print()
         elif attempt == "":
-            print("Invalid please try again")
-            return attempt
+            print()
+            print(formatter("-", "Invalid please try again"))
+            print()
         else:
-            print("Unlucky, that was incorrect")
+            print()
+            print(formatter("^", "Unlucky, that was incorrect"))
             numbers.pop(answer_index)
             answers.pop(answer_index)
-            return attempt
+            print()
+    return score_
 
 
 # function to format text output
@@ -116,12 +126,20 @@ played_before = yes_no("Have you played this game before? ")
 
 if played_before == "No":
     instructions()
+print()
 
 
 # ask the user how many questions they want to answer
 starting_balance = num_check("How many questions would you like to answer? (between 10 - 30) ", 10, 30)
-print(f"You are going to answer {starting_balance} questions")
+print()
+print(formatter("-", f"You are going to answer {starting_balance} questions"))
+print()
 
 
-questions = num_questions()
-print(questions)
+score = quiz(starting_balance)
+print()
+print("----------------------------------------")
+print(f"You got a score of {score} out of {starting_balance}")
+print(formatter("*", "WELL DONE"))
+print("----------------------------------------")
+print("Thanks for playing")

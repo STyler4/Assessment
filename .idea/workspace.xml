@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2cdce1cf-92f2-4c3f-9fc3-794e8c71e400" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/06_question_generator_v3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/07_how_many_questions_v1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assessment_base_v3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assessment_base_v4.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/06_question_generator_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/06_question_generator_v2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assessment_base_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assessment_base_v2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assessment_base_v4.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assessment_base_v4.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
